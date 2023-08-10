@@ -1,0 +1,10 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" fill="#00ADD8" stroke="#34495e" stroke-width="2" />
+
+    <rect x="50" y="140" width="100" height="10" fill="#ecf0f1" />
+
+    <path d="M50 50 Q90 100 50 140" fill="#e74c3c" />
+    <path d="M150 50 Q110 100 150 140" fill="#e74c3c" />
+
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="60" fill="#FFFFFF" text-anchor="middle">G</text>
+</svg>
