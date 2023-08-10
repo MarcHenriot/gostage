@@ -22,7 +22,7 @@ type TemplateData struct {
 
 func main() {
 	var templateData TemplateData
-	
+
 	content, err := os.ReadFile(JSON_DATA_FILE)
 	if err != nil {
 		slog.Error("Error when opening file: ", "err", err)
@@ -46,12 +46,12 @@ func main() {
 	}
 	for _, inputPath := range files {
 		outputPath, _ := templatePath(inputPath, templater, templateData)
-		
+
 		outputFile, _ := os.Create(filepath.Join(DESTINATION_FOLDER, outputPath))
 		defer outputFile.Close()
-		
+
 		inputFile, _ := os.ReadFile(inputPath)
-		
+
 		parsedTemplate, _ := templater.Parse(string(inputFile))
 		parsedTemplate.Execute(outputFile, templateData)
 	}
