@@ -1,0 +1,2 @@
+foo:
+  port: ${{ .Values.port }}

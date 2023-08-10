@@ -1,0 +1,7 @@
+{
+    "org": "mms",
+    "team": "platform",
+    "port": 8080,
+    "fileName": "super-values",
+    "binName": "gostage"
+}

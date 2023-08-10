@@ -1,0 +1,3 @@
+apiVersion: The chart API version (required)
+name: The name of the chart (required)
+version: A SemVer 2 version (required)
