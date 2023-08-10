@@ -8,18 +8,12 @@ The data that will be replaced is in `examples/template/data.json`
 
 Create files and folder as you want.
 
-## Ui
+## UI demo
 
-### Install nvm
-
-```bash
-sudo apt install curl 
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
-```
-
-### Install node 16.16.0
+Edit file `examples/template/template.yaml` only number and string are supported.
 
 ```bash
-nvm install 16.16.0
-nvm use 16.16.0
+make ui
 ```
+
+Go to <http://localhost:8080/>

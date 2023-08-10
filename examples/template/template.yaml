@@ -1,0 +1,28 @@
+title: "A registration form"
+description: "A simple form example."
+type: "object"
+required: 
+- "firstName"
+- "lastName"
+properties: 
+  firstName: 
+    type: "string"
+    title: "First name"
+    default: "Chuck"
+    ui:autofocus: true
+    ui:emptyValue: ""
+    ui:placeholder: "ui:emptyValue causes this field to always be valid despite being required"
+    ui:autocomplete: "family-name"
+    ui:enableMarkdownInDescription: true
+    ui:description: "Make **bold** or *italic*."
+  lastName: 
+    type: "string"
+    title: "Last name"
+    ui:autocomplete: "given-name"
+    ui:enableMarkdownInDescription: false
+    ui:description: "Make things **bold** or *italic*. Should not render"
+  age: 
+    type: "integer"
+    title: "Age"
+    ui:widget: "updown"
+    ui:title: "Age of person"
