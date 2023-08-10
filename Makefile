@@ -1,8 +1,8 @@
 SHELL=/bin/bash
 
-.PHONY: run fmt
+.PHONY: demo fmt
 
-run:
+demo:
 	@rm -rf examples/destination/*
 	@go run cmd/main.go
 
