@@ -1,25 +1,46 @@
 title: A registration form
 description: A simple form example.
 parameters: 
-- title: Name details
+- title: Org details
   required:
-  - firstName
-  - lastName
+  - org
+  - team
   properties:
-    firstName:
-      title: First name
+    org:
+      title: Organization Name
       type: string
-      default: Chuck
+      default: mms
       ui:autofocus: true
       ui:enableMarkdownInDescription: true
       ui:description: Make **bold** or *italic*.
-    lastName: 
-      title: Last name
+    team: 
+      title: Team Name
       type: string
       ui:enableMarkdownInDescription: false
       ui:description: Make things **bold** or *italic*. Should not render
-- title: Age details
+- title: Networking
+  required:
+  - port
   properties:
-    age: 
+    port: 
       type: integer
-      title: Age
+      default: 8080
+      title: Port
+- title: Code details
+  required:
+  - fileName
+  properties:
+    fileName:
+      title: Name of THE file
+      type: string
+      default: file
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.
+    binName:
+      title: Name of THE binary
+      type: string
+      default: gostage
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.

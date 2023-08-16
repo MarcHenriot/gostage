@@ -33,7 +33,7 @@ func NewForm() *Form {
 					{{- end }}
 				</fieldset>
 				{{- end }}
-				<input class="mui-button" type="submit" value="Submit">
+				<input class="mui-button" type="submit" value="Template">
 			</form>`,
 		funcMap: template.FuncMap{
 			"markdownToHTML": markdownToHTML,

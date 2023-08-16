@@ -1,6 +1,9 @@
 SHELL=/bin/bash
 
-.PHONY: demo fmt ui
+.PHONY: server demo fmt ui
+
+run:
+	@go run cmd/main.go
 
 demo:
 	@rm -rf examples/destination/*
@@ -11,6 +14,3 @@ fmt:
 
 go.sum: go.mod
 	@go mod tidy
-
-ui:
-	@go run ui/main.go
