@@ -1,28 +1,46 @@
-title: "A registration form"
-description: "A simple form example."
-type: "object"
-required: 
-- "firstName"
-- "lastName"
-properties: 
-  firstName: 
-    type: "string"
-    title: "First name"
-    default: "Chuck"
-    ui:autofocus: true
-    ui:emptyValue: ""
-    ui:placeholder: "ui:emptyValue causes this field to always be valid despite being required"
-    ui:autocomplete: "family-name"
-    ui:enableMarkdownInDescription: true
-    ui:description: "Make **bold** or *italic*."
-  lastName: 
-    type: "string"
-    title: "Last name"
-    ui:autocomplete: "given-name"
-    ui:enableMarkdownInDescription: false
-    ui:description: "Make things **bold** or *italic*. Should not render"
-  age: 
-    type: "integer"
-    title: "Age"
-    ui:widget: "updown"
-    ui:title: "Age of person"
+title: A registration form
+description: A simple form example.
+parameters: 
+- title: Org details
+  required:
+  - org
+  - team
+  properties:
+    org:
+      title: Organization Name
+      type: string
+      default: mms
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.
+    team: 
+      title: Team Name
+      type: string
+      ui:enableMarkdownInDescription: false
+      ui:description: Make things **bold** or *italic*. Should not render
+- title: Networking
+  required:
+  - port
+  properties:
+    port: 
+      type: integer
+      default: 8080
+      title: Port
+- title: Code details
+  required:
+  - fileName
+  properties:
+    fileName:
+      title: Name of THE file
+      type: string
+      default: file
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.
+    binName:
+      title: Name of THE binary
+      type: string
+      default: gostage
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.

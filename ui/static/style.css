@@ -1,63 +1,104 @@
-/* Reset and General Styles */
-* {
+/* Resetting some default styles for better cross-browser consistency */
+body, h1, h2, h3, p, figure, blockquote, dl, dd, ul, ol, form {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
-  }
-  
-  /* Typography */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  /* Spacing */
-  .mui-container {
-    padding: 16px;
-  }
-  
-  /* Buttons */
-  .mui-button {
-    background-color: #1976d2;
-    color: white;
-    padding: 8px 16px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 2em;
+}
+
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="string"],
+input[type="integer"] {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .mui-button:hover {
-    background-color: #1565c0;
-  }
-  
-  /* Cards */
-  .mui-card {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-  
-  /* Forms */
-  .mui-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .mui-form label {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .mui-form input, .mui-form textarea {
-    padding: 8px;
-    margin-bottom: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.mui-button {
+    display: block;
+    margin-top: 1em;
+}
+
+fieldset {
     border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+    padding: 0 0.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+b, i {
+    color: #555;
+}
+
+.dropdown-fieldset {
+    border: none;
+    margin-bottom: 1em;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none; /* Initially hide the content */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    border-top: none; /* Avoid double border at the top where toggle is */
+    padding: 1em;
+}

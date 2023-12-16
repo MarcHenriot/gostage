@@ -1,0 +1,25 @@
+title: A registration form
+description: A simple form example.
+parameters: 
+- title: Name details
+  required:
+  - firstName
+  - lastName
+  properties:
+    firstName:
+      title: First name
+      type: string
+      default: Chuck
+      ui:autofocus: true
+      ui:enableMarkdownInDescription: true
+      ui:description: Make **bold** or *italic*.
+    lastName: 
+      title: Last name
+      type: string
+      ui:enableMarkdownInDescription: false
+      ui:description: Make things **bold** or *italic*. Should not render
+- title: Age details
+  properties:
+    age: 
+      type: integer
+      title: Age
